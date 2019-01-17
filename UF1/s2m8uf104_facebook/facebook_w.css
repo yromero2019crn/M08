@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebed;
+}
+
+#barra {
+  height: 43px;
+  background-color: #5066ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#contingut{
+  width: 852px;
+  height: 2000px;
+  margin: 0 auto;
+}
+
+#cap{
+  height: 360px;
+  background-color: white;
+  background-image: url(img/fondo.jpg);
+  background-repeat: no-repeat;
+  width: 852px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+}
+
+#principal{
+  height: 500px;
+}
+
+#contingut img{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 130px;
+  left: 21px;
+}
+
+#contingut h3{
+  position: relative;
+  color: white;
+  top: 240px;
+  left: 200px;
+  font-family: sans-serif;
+}
+
+#menu{
+  background-color: #5066ae;
+  height: 43px;
+  width: 658px;
+  float:right;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 259px;
+  font-family: Lucida Grande;
+}
+
+#menu li{
+  float: left;
+  margin: 0 1px 0 0;
+  list-style: none;
+  background-color: white;
+  display: block;
+  height: 43px;
+  padding: 0 25px;
+  line-height: 43px;
+}
+
+
+#presentacion{
+
+}
+
+.esquerra{
+  height: 222px;
+  width: 322px;
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #DDD;
+  margin-top: 12px;
+}
+
+#fotos{
+  background-color: blue;
+}
