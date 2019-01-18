@@ -59,7 +59,7 @@ body{
   margin: 0;
   position: relative;
   top: 259px;
-  font-family: Lucida Grande;
+  font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
 }
 
 #menu li{
@@ -81,12 +81,37 @@ body{
 .esquerra{
   height: 222px;
   width: 322px;
+
+
+}
+
+#fotos{
+  background-color: blue;
+}
+
+#secciones{
+  float: left;
+  width: 322px;
+  overflow: hidden;
+}
+
+#seccion2{
+  float: right;
+  width: 514px;
+}
+
+.dreta{
+  height: 100px;
+  width: 515px;
+}
+
+.esquerra, .dreta{
   background-color: white;
   border-radius: 3px;
   border: solid 1px #DDD;
   margin-top: 12px;
 }
 
-#fotos{
-  background-color: blue;
+#presentacion{
+
 }
