@@ -1,0 +1,128 @@
+body{
+  background-color: #222;
+  font-family: Helvetica, Sans-serif;
+  color: #FFF;
+}
+
+ul{
+    list-style-type: none;
+}
+#barra{
+  background-color: rgb(0,0,0,0.5);
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 1000;
+}
+#foto{
+  float: left;
+  margin-top:10px;
+  margin-left: 10px;
+}
+#izquierda{
+  list-style-type: none;
+  float: left;
+  margin-left: 30px;
+}
+
+#izquierda li{
+  display: inline-block;
+  padding-right: 5px;
+}
+
+#derecha{
+  float: right;
+  margin-right: 30px;
+}
+
+#derecha li{
+  display: inline-block;
+  padding-right: 5px;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+#documentalsinteresants{
+  padding-top: 50px;
+}
+
+#documentalsinteresants img{
+  border-radius: 5px;
+}
+
+.fotopelis{
+
+}
+
+.documentals{
+  width: 175px;
+  float: left;
+  padding-right: 20px;
+}
+
+.titulo{
+  padding: 0;
+  margin-top: -5px;
+}
+
+.xxx{
+float: left;
+margin-top: -5px;
+}
+
+.documental{
+float: right;
+margin-top: -5px;
+}
+
+#primeralinea{
+overflow: hidden;
+}
+
+#segundalinea{
+}
+
+img:hover{
+  color: #FFF;
+}
+
+#documentalsvistos{
+  clear: both;
+}
+
+#documentalsvistos img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%):
+  filter: grayscale (100%);
+  border-radius: 5px;
+}
+
+#peliculaspendientes{
+  clear: both;
+}
+
+#peliculaspendientes img{
+  border-radius: 5px;
+}
+
+#peliculasvistas{
+  clear: both;
+}
+
+#peliculasvistas img{
+  border-radius: 5px;
+  height: 260px;
+  width: 175px;
+}
+
+#seriessiguiendo{
+  clear: both;
+}
+
+#seriesvistas{
+  clear: both;
+}
