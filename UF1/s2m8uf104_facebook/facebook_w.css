@@ -1,4 +1,7 @@
-body{
+/*Versión escritorio*/
+  @media only screen and (min-width: 960px){
+
+  body{
   margin: 0;
   padding: 0;
   background-color: #e9ebed;
@@ -502,9 +505,389 @@ background-color: #A5A5A5;
 }
 
 #comentarios #meme{
-  width: 180px;
-  height: 300px;
+  width: 190px;
+  height: 310px;
   border-radius: 0;
   padding: 10px;
-  margin-left: 20px;
+  margin: -20px 20px 20px;
+}
+}
+
+
+
+@media only screen and (max-width: 959px){
+
+  body{
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+
+  #barra {
+  visibility: hidden;
+  }
+
+  #contingut{
+
+  }
+
+  #cap{
+    height: 254px;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+
+
+  #contingut img{
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    margin-top: 150px;
+  }
+
+  #contingut h3{
+    width: 100%;
+    font-size: 28px;
+    font-family: helvetica;
+    color: black;
+    position: absolute;
+    top: 340px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #menu{
+visibility: hidden;
+  }
+
+  #menu li{
+
+  }
+
+  #menu li:hover{
+
+  }
+  .esquerra{
+
+  }
+
+  #principal{
+  margin-top:150px;
+  }
+
+  #secciones{
+
+  }
+
+  #seccion2{
+
+  }
+
+  .dreta{
+
+  }
+
+  .esquerra, .dreta{
+
+  }
+
+  ul{
+
+  }
+
+  #secciones h2{
+
+  }
+
+  #presentacion h2{
+
+  }
+
+  #presentacion p{
+
+  }
+
+  #amistad h2{
+
+  }
+
+  #sabias h2{
+
+  }
+
+
+  #presentacion .estudios{
+    list-style-image: url(iconetes/icones_estudis.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  #presentacion .domicilio{
+    list-style-image: url(iconetes/icones_domicili.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  #presentacion .situacion{
+    list-style-image: url(iconetes/icones_sentimental.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  #presentacion .amigos{
+    list-style-image: url(iconetes/icones_amics.png);
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+
+  #secciones li{
+   width: 60%;
+   list-style: none;
+   margin: 0 auto;
+   font-size: 20px;
+   color: grey;
+    }
+
+   #amistad li a:link{
+
+   }
+
+   #amistad a:visited{
+
+
+   }
+
+  #ag{
+
+    background-image: url(https://agarcia2019crn.github.io/M08/s2m8uf104_garciaa/img/perfil.jpg);
+  }
+  #mm{
+    background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
+  }
+  #sg{
+    background-image: url(https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg);
+  }
+  #np{
+    background-image: url(https://iprados2019crn.github.io/M08/s2m8uf104_iprados/img/fotoperfil.jpg);
+  }
+  #op{
+    background-image: url(https://oparicio2019crn.github.io/M08/UF1/s2m8uf104_oparicio/img/perfil.png);
+  }
+  #nc{
+    background-image: url(https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg);
+  }
+  #vh{
+    background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
+  }
+  #gb{
+    background-image: url(https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg);
+  }
+  #sm{
+    background-image: url(https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg);
+  }
+
+  #fotos ul{
+
+  }
+  #fotos li{
+
+  }
+
+
+  #foto1{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+
+  #foto2{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto3{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto4{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto5{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto6{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto7{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto8{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #foto9{
+    background-image: url(img/fantasma.jpg);
+    background-position: -15px;
+  }
+  #amistad ul{
+
+  }
+
+
+  #pensando{
+
+  }
+
+   #uno{
+
+  }
+
+  #uno li{
+
+  }
+
+  #uno{
+
+  }
+
+  #crear{
+
+  }
+
+  #foto{
+
+  }
+
+  #video{
+    background-image: url(iconetes/camara.png);
+    text-indent: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 15px;
+  }
+  #acontecimiento{
+    background-image: url(iconetes/publicacion.png);
+    text-indent: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 15px;
+    background-color: #E5E5E5;
+    width:490px;
+  }
+  .pregunta{
+
+  }
+
+  #dos{
+
+  }
+
+  #dos li{
+
+  }
+
+  #miniperfil img{
+
+  }
+
+  #dos li:hover{
+
+  }
+
+  #uno li:hover{
+
+  }
+
+  .pregunta{
+
+  }
+  #fotoyvideo{
+
+  }
+
+  #etiquetar{
+
+  }
+
+  #sentimiento{
+
+  }
+
+
+  #comentarios img{
+
+  }
+
+  #texto{
+
+  }
+
+  #diamesany{
+
+  }
+
+  #comentarios h6{
+
+  }
+
+  #comentarios ul{
+
+  }
+
+  #comentarios ul li{
+
+  }
+
+  #comentarios #texto{
+
+  }
+  #comentarios p{
+
+  }
+
+  #mg{
+
+  }
+
+  #com{
+
+  }
+
+  #comp{
+
+  }
+
+  #puntos{
+
+  }
+
+  #comentarios ul li:hover{
+
+  }
+
+  .textocomentario{
+
+  }
+
+  #comentarios #meme{
+
+  }
 }
