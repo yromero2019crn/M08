@@ -1,0 +1,271 @@
+*{
+  position: relative;
+}
+
+.iz{
+  float: left;
+}
+
+.dr{
+  float: right;
+}
+
+.cabeza{
+  width: 450px;
+  height: 630px;
+  background: #EDCDB1;
+  border-radius: 200px 200px 250px 250px;
+  margin: 50px auto;
+}
+
+.pelo{
+  height: 880px;
+  width: 507px;
+  left: -30px;
+  background-color: #B18C4D ;
+  border-radius: 140px 140px 10px 10px;
+  z-index:-10;
+  top:-30px;
+}
+
+.frente{
+  height: 75px;
+  background-color: #B18C4D;
+  border-radius: 140px 140px 10px 10px;
+  top: -890px;
+}
+
+.flequillo{
+   top: -900px;
+   right: 29px;
+   height: 410px;
+   width: 80px;
+   border-right: #B18C4D solid 30px;
+   border-radius: 5px 100px 100px 50px;
+   float: right;
+   z-index: 1000;
+}
+
+.flequillo2{
+  top: -890px;
+  right: 300px;
+  height: 300px;
+  width: 80px;
+  border-right: #B18C4D solid 30px;
+  border-radius: 5px 100px 100px 10px;
+  float: right;
+  z-index: 1000;
+  transform: rotate(35deg);
+}
+
+.cejas{
+  position: absolute;
+  top: 140px;
+  height: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ceja{
+  width: 30%;
+  height: 15px;
+  margin: 0px 10% 0px 10%;
+  background-color: black;
+  border-radius: 20%;
+
+}
+
+.ojos{
+  position: absolute;
+  top: 180px;
+  height: 15px;
+  width: 100%;
+}
+.ojo{
+  height: 60px;
+  width: 90px;
+  background-color: white;
+  margin: 0 65px 0 65px;
+  border-radius: 50%;
+}
+
+.iris{
+  height: 45px;
+  width: 45px;
+  background-color: #548C85;
+  top: 10px;
+  margin: 0 20px 0 20px;
+  border-radius: 50%;
+}
+
+.pupila{
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  top: 12px;
+  margin: 0 1px 0 10px;
+  border-radius: 50%;
+}
+
+.pestanya1{
+    width: 3px;
+    height: 15px;
+    background-color: #242424;
+    top: -35px;
+}
+
+.pestanya2{
+  width: 3px;
+  height: 15px;
+  background-color: #242424;
+  top: -50px;
+  left: 10px;
+}
+
+.pestanya3{
+  width: 3px;
+  height: 15px;
+  background-color: #242424;
+  top: -65px;
+  left: 20px;
+}
+
+.pestanya4{
+  width: 3px;
+  height: 15px;
+  background-color: #242424;
+  top: -80px;
+  left: 30px;
+}
+
+.pestanya5{
+  width: 3px;
+  height: 15px;
+  background-color: #242424;
+  top: -90px;
+  left: 40px;
+}
+
+
+.nariz{
+top: -780px;
+left: 180px;
+}
+
+.forata{
+  width: 60px;
+  height: 60px;
+  background-color: #E0BFA2;
+  border-radius: 50%;
+}
+.forataa{
+  left: 1px;
+  top: -10px;
+  width: 60px;
+  height: 70px;
+  background-color: #EDCDB1;
+  border-radius: 50%;
+}
+.foratb{
+  right: 150px;
+  width: 60px;
+  height: 60px;
+  background-color: #E0BFA2;
+  border-radius: 50%;
+}
+.foratbb{
+  left: -1px;
+  top: -10px;
+  width: 60px;
+  height: 70px;
+  background-color: #EDCDB1;
+  border-radius: 50%;
+}
+
+.linea{
+  width: 2px;
+  height: 130px;
+  background-color: #E0BFA2;
+  left: 40px;
+}
+
+
+.orejas{
+height: 70px;
+top: -860px;
+}
+
+.oreja{
+  width: 20px;
+  height: 70px;
+  background-color: #EDCDB1;
+  top:0;
+  left: -20px;
+  position: absolute;
+  border-radius: 20px 0 0 20px;
+}
+
+.pendiente{
+
+}
+
+.orejas2{
+  width: 20px;
+  height: 70px;
+  background-color: #EDCDB1;
+  top: 215px;
+  right: -20px;
+  position: absolute;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.pendiente2{
+
+}
+.pendiente1{
+
+}
+
+.boca{
+   top: -700px;
+   left: 120px;
+   width: 210px;
+   height: 70px;
+   background: #4A1610;
+   border-radius: 15px 15px 70px 70px;
+  }
+
+  .dientes{
+   width: 210px;
+   height: 30px;
+   left: 0px;
+   background: #D3D2D1;
+   border-radius: 5px 5px 100% 100%;
+   margin-bottom: 2px;
+  }
+
+
+.camiseta{
+  width: 700px;
+  height: 200px;
+  background-color: #83B1C5;
+  left: -100px;
+  top: -650px;
+  border-radius: 100px 100px 0 0;
+}
+.cuello{
+  width: 150px;
+  height: 120px;
+  background-color: #EDCDB1;
+  left: 150px;
+  top: -650px;
+}
+
+.triangulo{
+    width: 150px;
+    height: 150px;
+    background-color: #EDCDB1;
+    left: 250px;
+    top: 0px;
+    border-radius: 0 0 100px 100px;
+}
