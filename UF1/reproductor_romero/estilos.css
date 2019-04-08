@@ -1,0 +1,300 @@
+#nyd{
+  width: 25px;
+  height: 30px;
+  margin-left: 60px;
+  margin-top: 5px;
+  background-image: url("img/modonochedes.png");
+  background-size: 15px;
+  background-color: transparent;
+  border-color: transparent;
+  background-repeat: no-repeat;
+}
+#nyd:focus{
+  width: 25px;
+  height: 30px;
+  margin-left: 60px;
+  margin-top: 5px;
+  background-image: url("img/modonocheact.png");
+  background-size: 15px;
+  background-color: transparent;
+  border-color: transparent;
+  background-repeat: no-repeat;
+}
+/*Versión escritorio*/
+  @media only screen and (min-width: 960px){
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#barra{
+  background-color: #666666;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#barra #menuhamburguesa{
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#menu1:hover #menu{
+  display: block;
+  overflow: visible;
+  transition: 3s;
+}
+
+#menu{
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  background-color: #666666;
+  color: #A2D9F5;
+  margin-left:-40px;
+  width: 150px;
+}
+
+
+
+#menu li{
+  text-align: center;
+  list-style-type:none;
+  margin-top: 20px;
+  border-bottom: solid 1px #A2D9F5;
+  width: 100%;
+}
+
+#favoritos{
+  margin-bottom: -16px;
+}
+
+#menu a{
+  text-decoration: none;
+  color: #A2D9F5;
+}
+
+
+#menu1{
+  position: absolute;
+
+}
+
+#barra #modonoche{
+  height: 25px;
+  padding-top:7px;
+  margin-left: 70px;
+}
+
+#barra #yaimusic{
+  height: 30px;
+  margin: 0 auto;
+  margin-top: -30px;
+  display:block;
+}
+
+#albumes{
+margin-top: 30px;
+width: 960px;
+margin:0 auto;
+padding-top: 50px;
+}
+
+.fotosalbum{
+  height: 300px;
+  width: 300px;
+  background-color: #A2D9F5;
+  margin: 10px;
+  float: left;
+  display: inline-block;
+}
+
+#d1{
+  background-image: url("img/discos/1.jpg");
+  background-size: cover;
+
+}
+
+#d2{
+  background-image: url("img/discos/2.jpg");
+  background-size: cover;
+}
+
+#d3{
+  background-image: url("img/discos/3.jpg");
+  background-size: cover;
+}
+
+#d4{
+  background-image: url("img/discos/4.jpg");
+  background-size: cover;
+}
+
+#d5{
+  background-image: url("img/discos/5.jpg");
+  background-size: cover;
+}
+
+#d6{
+  background-image: url("img/discos/6.jpg");
+  background-size: cover;
+}
+
+#d7{
+  background-image: url("img/discos/7.jpg");
+  background-size: cover;
+}
+
+#d8{
+  background-image: url("img/discos/8.jpg");
+  background-size: cover;
+}
+
+#d9{
+  background-image: url("img/discos/9.jpg");
+  background-size: cover;
+}
+}
+
+
+
+@media only screen and (max-width: 959px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  #barra{
+    background-color: #666666;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+  }
+
+  #barra #menuhamburguesa{
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  #menu1:hover #menu{
+    display: block;
+    overflow: visible;
+    transition: 3s;
+  }
+
+  #menu{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    background-color: #666666;
+    color: #A2D9F5;
+    margin-left:-40px;
+    width: 150px;
+  }
+
+  #menu li{
+    text-align: center;
+    list-style-type:none;
+    margin-top: 20px;
+    border-bottom: solid 1px #A2D9F5;
+    width: 100%;
+  }
+
+  #favoritos{
+    margin-bottom: -16px;
+  }
+
+  #menu a{
+    text-decoration: none;
+    color: #A2D9F5;
+  }
+
+
+  #menu1{
+    position: absolute;
+
+  }
+
+  #barra #modonoche{
+    height: 25px;
+    padding-top:7px;
+    margin-left: 70px;
+  }
+
+  #barra #yaimusic{
+    height: 30px;
+    margin: 0 auto;
+    margin-top: -30px;
+    display:block;
+  }
+
+  #albumes{
+  margin-top: 30px;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+  padding-top: 50px;
+  }
+
+  .fotosalbum{
+    height: 300px;
+    width: 300px;
+    background-color: #A2D9F5;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  #d1{
+    background-image: url("img/discos/1.jpg");
+    background-size: cover;
+
+  }
+
+  #d2{
+    background-image: url("img/discos/2.jpg");
+    background-size: cover;
+  }
+
+  #d3{
+    background-image: url("img/discos/3.jpg");
+    background-size: cover;
+  }
+
+  #d4{
+    background-image: url("img/discos/4.jpg");
+    background-size: cover;
+  }
+
+  #d5{
+    background-image: url("img/discos/5.jpg");
+    background-size: cover;
+  }
+
+  #d6{
+    background-image: url("img/discos/6.jpg");
+    background-size: cover;
+  }
+
+  #d7{
+    background-image: url("img/discos/7.jpg");
+    background-size: cover;
+  }
+
+  #d8{
+    background-image: url("img/discos/8.jpg");
+    background-size: cover;
+  }
+
+  #d9{
+    background-image: url("img/discos/9.jpg");
+    background-size: cover;
+  }
+
+}

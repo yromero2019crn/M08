@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="canciones.css">
+    <title>Yaimusic</title>
+    <link rel="icon" type="image/png" href="img/logo2.png"/>
+    <meta name="generator" content="Google Web Designer 5.0.3.0130">
+    <meta name="template" content="Expandable 3.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <script type="text/javascript" language="javascript">
+
+  var reproducir,playpause, barramusica;
+
+  function inicialitzaReproductor(){
+    reproducir=document.getElementById("reproducir");
+    playpause=document.getElementById("playpause");
+    barramusica=document.getElementById("barramusica");
+
+    playpause.addEventListener("click", playPause, false);
+    barramusica.addEventListener("change", posicionAudio, false);
+    reproducir.addEventListener("timeupdate",actualizaTemps,false);
+  }
+
+  window.onload=inicialitzaReproductor;
+
+//play y pausa
+  function playPause(){
+    if (reproducir.paused) {
+      reproducir.play();
+      playpause.blur();
+
+    }
+    else {
+      reproducir.pause();
+      playpause.focus();
+    }
+  }
+
+
+
+
+//para cambiar el tiempo
+  function posicionAudio(){
+    var vesA=reproducir.duration *(barramusica.value/100);
+    reproducir.currentTime=vesA;
+  }
+
+
+
+//para que la barra se mueva
+
+  function actualizaTemps(){
+    var noutemps=reproducir.currentTime*(100/reproducir.duration);
+    barramusica.value=noutemps;
+  }
+
+
+
+
+//mg
+function registre(){
+  var fav=document.getElementsByClass('corazon').value;
+}
+
+
+
+//modonochede
+function nyd(){
+  document.body.style.backgroundColor="#555555";
+}
+
+  </script>
+  <body>
+    <div id="barra">
+    <div id="menu1">
+      <img id="menuhamburguesa" src="img/menuhamburguesa.png">
+      <nav id="menu">
+      <ul>
+       <li><a href="inicio.html">Albumes</a></li>
+       <li><a href="canciones.html">Canciones</a></li>
+       <li id=favoritos><a href="fav.html">Favoritos</a></li>
+      </ul>
+      </nav>
+    </div>
+    </img>
+      <input id="nyd" type="button" onclick="nyd()">
+      <a href="inicio.html"><img id="yaimusic" src="img/yaimusic.png"></img></a>
+    </div>
+
+
+<div class="fotosalbum" id="d1"></div>
+
+<div id="listacanciones">
+<h1>El canto del loco</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Pequeñita</p><img  class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Llueve en mi</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Busco la vida</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>He vuelto a caer</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>A contracorriente</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Son sueños</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Puede ser</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>A contracorriente</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Contigo</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Aquellos años locos</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>Estados de ánimo</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Volver a disfrutar</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>La madre de José</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Insoportable</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Una foto en blanco y negro</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>Zapatillas</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Volverá</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Zapatillas</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Besos</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Vuelve</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>De personas a personas</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Personas</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Quiero ser</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Eres tonto</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Todo lo hago mal</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>Por mí y por todos</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Aunque tú no lo sepas</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Aquellas pequeñas cosas</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Mejor</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Nada de nada</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>Radio La Colifata</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Corazón</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Peter Pan</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>El pescao</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Un millón de ciicatrices</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>Personas</h1><h5>El canto del loco</h5>
+<hr style="color: #0056b2;"/>
+<p>Acabado en A</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Eh tu!</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Gracias</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>La vida</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</br>
+
+<h1>Anunciado en TV</h1><h5>Pignoise</h5>
+<hr style="color: #0056b2;"/>
+<p>Perder el tiempo</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Que más me da</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+<p>Me quedo en el infierno</p><img class="corazon" src="img/corazonsin.png"/><hr style="color: #0056b2;"/>
+</div>
+
+<div id="reproductor">
+
+  <div class="range"></div>
+  <input id="barramusica" type="range" name="range" min="0" max="100" value="0" step="1"></br>
+  <audio id="reproducir" width="500px" height="40px" src="mp3/pequeñita.mp3" type="audio/mpeg"></audio>
+<div id="botones">
+  <button class="back">  <img class="simbolos" src="img/simbolos/patras.png"></img> </button>
+  <button id="emmudir" class="audio"></button>
+  <button id="playpause"></button>
+  <button class="siguiente"><img class="simbolos" src="img/simbolos/palante.png"></img> </button>
+</div>
+</div>
+
+<div id="reproduciendo">
+<p id="nombrecancion">Perder el tiempo</p><h5 id="nombredisco">Pignoise</h5>
+</div>
+  </body>
+</html>

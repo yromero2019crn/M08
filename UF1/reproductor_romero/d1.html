@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="albumes.css">
+    <title>Yaimusic</title>
+    <link rel="icon" type="image/png" href="img/logo2.png"/>
+    <meta name="generator" content="Google Web Designer 5.0.3.0130">
+    <meta name="template" content="Expandable 3.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <script type="text/javascript" language="javascript">
+
+  var reproducir,playpause, barramusica;
+  var vesA, noutemps;
+  var canciones, cancion, nombre, anterior, siguiente;
+  var emmudir;
+
+  function inicialitzaReproductor(){
+    reproducir=document.getElementById("reproducir");
+    playpause=document.getElementById("playpause");
+    barramusica=document.getElementById("barramusica");
+
+    /* Definimos variables playlist ------------------------------------------*/
+    canciones = ["mp3/pequeñita.mp3",
+                  "mp3/2.mp3",
+                  "mp3/3.mp3",
+                  "mp3/4.mp3"];
+    cancion = ["Pequeñita","Llueve en mi","Busco la vida","He vuelto a caer"];
+
+    nombre = document.getElementById("cancion");
+
+    anterior = document.getElementById('anterior');
+    siguiente = document.getElementById('siguiente');
+    emmudir = document.getElementById('emmudir');
+
+    playpause.addEventListener("click", playPause, false);
+    barramusica.addEventListener("change", posicionAudio, false);
+    reproducir.addEventListener("timeupdate",actualizaTemps,false);
+
+
+    /* Definimos eventos playlist------------------------------------------*/
+    anterior.addEventListener('click',anterior, false);
+    siguiente.addEventListener('click',siguiente, false);
+    emmudir.addEventListener('click',emmudeix, false);
+  }
+
+  window.onload=inicialitzaReproductor;
+
+
+//play y pausa
+  function playPause(){
+    if (reproducir.paused) {
+      reproducir.play();
+      playpause.blur();
+
+    }
+    else {
+      reproducir.pause();
+      playpause.focus();
+    }
+  }
+
+  function emmudeix(){
+    if (reproducir.muted) {
+      reproducir.muted=false;
+      emmudir.blur();
+
+    }
+    else {
+      reproducir.muted=true;
+      emmudir.focus();
+    }
+  }
+
+
+
+
+//para cambiar el tiempo
+  function posicionAudio(){
+    var vesA=reproducir.duration *(barramusica.value/1000);
+    reproducir.currentTime=vesA;
+  }
+
+//para que la barra se mueva
+
+  function actualizaTemps(){
+    var noutemps=reproducir.currentTime*(1000/reproducir.duration);
+    barramusica.value=noutemps;
+  }
+
+
+
+
+
+//reproducir Playlist
+
+
+/* Definimos funciones ------------------------------------------*/
+function siguiente(){
+  canciones++;
+  nombre++;
+  reproducir.src=canciones[1];
+  reproducir.play();
+  nombre.textContent=cancion[0];
+}
+
+function anterior(){
+  canciones--;
+  reproducir.src=canciones[4];
+  reproducir.play();
+  nombre.textContent=cancion[4];
+  nombre--;
+}
+
+console.log(canciones);
+
+
+
+
+
+//modonochede
+function nyd(){
+  document.body.style.backgroundColor="#555555";
+  document.body.style.color="white";
+}
+
+/*-------para cada que me reproduzca cada cancion OPCIN 2(no funciona)
+var cancion=document.getElementById('audio');
+  function song1(){
+    document.getElementById('audio').src=cancion[0].src;
+  }
+  function song2(){
+    document.getElementById('audio').src=cancion[1].src;
+  }
+  function song3(){
+    document.getElementById('audio').src=cancion[2].src;
+  }
+  function song4(){
+    document.getElementById('audio').src=cancion[3].src;
+  }
+
+  cancion[0].addEventListener('click',song1);
+  cancion[1].addEventListener('click',song2);
+  cancion[2].addEventListener('click',song3);
+  cancion[3].addEventListener('click',song4);
+*/
+  </script>
+
+  <body>
+    <div id="barra">
+    <div id="menu1">
+      <img id="menuhamburguesa" src="img/menuhamburguesa.png">
+      <nav id="menu">
+      <ul>
+       <li><a href="inicio.html">Albumes</a></li>
+       <li><a href="canciones.html">Canciones</a></li>
+       <li id=favoritos><a href="fav.html">Favoritos</a></li>
+      </ul>
+      </nav>
+    </div>
+    </img>
+      <input id="nyd" type="button" onclick="nyd()">
+      <a href="inicio.html"><img id="yaimusic" src="img/yaimusic.png"></img></a>
+    </div>
+
+
+<div class="fotosalbum" id="d1"></div>
+
+<div>
+  <p id="cancion"></p>
+</div>
+
+<div id="reproductor">
+  <div class="cover"></div>
+  <div class="info"></div>
+</div>
+
+  <div class="range"></div>
+  <input id="barramusica" type="range" name="range" min="0" max="1000" value="0" step="1"></br>
+  <audio id="reproducir" width="500px" height="40px" src="mp3/pequeñita.mp3" type="audio/mpeg"></audio>
+
+<div id="botones">
+  <button id="anterior" onclick="anterior()" class="back"><img class="simbolos" src="img/simbolos/patras.png"></img></button>
+
+  <button id="emmudir" class="audio"></button>
+
+  <button id="playpause"></button>
+
+  <button id="siguiente" class="siguiente" onclick="siguiente()"><img class="simbolos" src="img/simbolos/palante.png"></img> </button>
+
+</div>
+
+<div id="listacanciones">
+<hr style="color: #0056b2;"/>
+<p class="nombrecancion"><audio class="audio" src="mp3/pequeñita.mp3" type="audio/mpeg"></audio>Pequeñita</p><hr style="color: #0056b2;"/></p>
+<p class="nombrecancion"><audio class="audio" src="mp3/2.mp3" type="audio/mpeg"></audio>Llueve en mi</p><hr style="color: #0056b2;"/></p>
+<p class="nombrecancion"><audio class="audio"src="mp3/3.mp3" type="audio/mpeg"></audio>Busco la vida</p><hr style="color: #0056b2;"/></p>
+<p class="nombrecancion"><audio class="audio"src="mp3/4.mp3" type="audio/mpeg"></audio>He vuelto a caer</p><hr style="color: #0056b2;"/></p>
+</div>
+
+  </body>
+</html>
