@@ -1,0 +1,305 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#reproductor{
+  width: 900px;
+  margin-top: 300px;
+  margin: 0 auto;
+}
+
+
+.range{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 20px;
+  border-radius: 10px;
+  z-index: 2;
+  cursor: pointer;
+  left: 25%;
+}
+
+
+input[type=range]{
+  -webkit-appearance:none;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+input[type=range]:focus{
+outline:none;
+}
+
+/*----- controlador -----*/
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  height: 20px;
+  width: 20px;
+  background-color: #A2A7A8;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 3;
+  position: relative;
+}
+
+/*----- carril -----*/
+input[type=range]::-webkit-slider-runnable-track{
+  width:50%;
+  background-color: #BFE2F4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+/*-----  -----*/
+  #playpause{
+    border: none;
+    text-decoration:none;
+    width: 50px;
+    height: 50px;
+    background-color: #A2D9F5;
+    border-radius: 50px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    left: -5px;
+    cursor:pointer;
+  }
+
+  #botones{
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .siguiente{
+    margin:0 auto;
+    margin-top: -50px;
+    cursor: pointer;
+    float: right;
+    margin-right: -90px;
+    background-color: transparent;
+    border-top:3px solid transparent;
+     border-right:3px solid transparent;
+     border-bottom:3px solid transparent;
+     border-left:3px solid transparent;
+     cursor:pointer;
+  }
+
+  .back{
+   float: left;
+   margin-top: 0px;
+   margin-left: -60px;
+   background-color: transparent;
+   border-top:3px solid transparent;
+    border-right:3px solid transparent;
+    border-bottom:3px solid transparent;
+    border-left:3px solid transparent;
+   cursor:pointer;
+  }
+
+  #emmudir{
+    height: 30px;
+    width: 30px;
+    margin-left: 0px;
+    float: right;
+    margin-top: 10px;
+    background-image: url("../img/simbolos/sisonido.png");
+    background-size: cover;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  #emmudir:focus{
+    background-image: url("../img/simbolos/nosonido.png");
+    background-size: cover;
+    border-color: transparent;
+  }
+
+
+  #playpause:focus{
+    outline: none;
+  }
+
+
+  #playpause:before, #playpause:after {
+    content:"";
+    display: block;
+    background: white;
+    left: 11px;
+    top: 10px;
+    color: black;
+    position: absolute;
+    z-index: 20;
+    height: 30px;
+    width: 10px;
+    border: none 0 transparent;
+  }
+
+  #playpause:after{
+    left: 28px;
+    visibility: visible;
+
+  }
+
+  #playpause:focus:before, #playpause:focus:after{
+    content:"";
+    display: block;
+    left: 15px;
+    top: 10px;
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    border-top: solid 15px transparent;
+    border-left: solid 25px white;
+    border-bottom:  solid 15px transparent;
+    border-right: solid 25px transparent;
+    z-index: 20;
+    height: 0px;
+    width: 0px;
+  }
+
+  #playpause:focus:after{
+    visibility: hidden;
+  }
+
+
+  #barra{
+    background-color: #666666;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    margin-top: -80px;
+    padding: 0;
+  }
+
+  #barra #menuhamburguesa{
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  #menu1:hover #menu{
+    display: block;
+    overflow: visible;
+    transition: 3s;
+  }
+  #nyd{
+    width: 25px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+    background-image: url("../img/modonochedes.png");
+    background-size: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    background-repeat: no-repeat;
+  }
+  #nyd:focus{
+    width: 25px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+    background-image: url("../img/modonocheact.png");
+    background-size: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    background-repeat: no-repeat;
+  }
+  #menu{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    background-color: #666666;
+    color: #A2D9F5;
+    margin-left:-40px;
+    width: 150px;
+  }
+
+  #menu li{
+    text-align: center;
+    list-style-type:none;
+    margin-top: 20px;
+    border-bottom: solid 1px #A2D9F5;
+    width: 100%;
+  }
+
+  #favoritos{
+    margin-bottom: -16px;
+  }
+
+  #menu a{
+    text-decoration: none;
+    color: #A2D9F5;
+  }
+
+
+  #menu1{
+    position: absolute;
+
+  }
+
+  #barra #modonoche{
+    height: 25px;
+    padding-top:7px;
+    margin-left: 70px;
+  }
+
+  #barra #yaimusic{
+    height: 30px;
+    margin: 0 auto;
+    margin-top: -30px;
+    display:block;
+  }
+
+
+#cancion{
+  font-size: 1.5em;
+  text-align: center;
+  font-family: DejaVu Sans Mono, monospace, verdana;
+}
+
+p{
+  cursor: pointer;
+}
+
+#listacanciones{
+  font-family: FreeMono, monospace;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+
+@media only screen and (min-width: 960px){
+
+    .fotosalbum{
+      height: 300px;
+      width: 300px;
+      background-image: url("../img/discos/1.jpg");
+      background-size: cover;
+      margin: 0 auto;
+      margin-top: 80px;
+    }
+
+}
+
+
+@media only screen and (max-width: 959px){
+
+  .fotosalbum{
+    height: 150px;
+    width: 150px;
+    background-image: url("../img/discos/1.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+}

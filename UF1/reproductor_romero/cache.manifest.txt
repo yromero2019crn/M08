@@ -1,0 +1,11 @@
+ index.html
+ img/*
+ img/simbolos/*
+ img/discos/*
+ mp3/*
+ fonts/*
+ css/albumes.css
+ css/canciones.css
+ css/estilos.css
+ html/canciones.html
+ html/d1.html
